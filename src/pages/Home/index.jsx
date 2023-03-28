@@ -1,4 +1,10 @@
-import { AboutMe, Background, Skills } from "../../components/Home";
+import {
+  AboutMe,
+  Background,
+  Skills,
+  Projects,
+  ContactForm,
+} from "../../components/Home";
 import icons from "../../components/icons";
 
 const Home = () => {
@@ -49,13 +55,15 @@ const Home = () => {
         </div>
         <div className="row-span-2">
           <figure>
-            <img src={"../../public/mee.png"} alt="creator" />
+            <img src={"../../mee.png"} alt="creator" />
           </figure>
         </div>
       </div>
       <Skills />
       <AboutMe />
       <Background />
+      <Projects />
+      <ContactForm />
     </main>
   );
 };

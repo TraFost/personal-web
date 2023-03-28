@@ -1,10 +1,17 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
+import { BsLinkedin, BsGithub, BsFillTelephoneFill } from "react-icons/bs";
+import { AiFillInstagram, AiOutlineMail } from "react-icons/ai";
 import { MdDownloadForOffline } from "react-icons/md";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { DiHtml5 } from "react-icons/di";
-import { SiCss3, SiTailwindcss, SiJavascript, SiRedux } from "react-icons/si";
+import {
+  SiCss3,
+  SiTailwindcss,
+  SiJavascript,
+  SiRedux,
+  SiMinutemailer,
+} from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
+import { TfiLocationPin } from "react-icons/tfi";
 
 const icons = {
   BsLinkedin,
@@ -18,5 +25,9 @@ const icons = {
   SiJavascript,
   SiRedux,
   GrReactjs,
+  AiOutlineMail,
+  BsFillTelephoneFill,
+  TfiLocationPin,
+  SiMinutemailer,
 };
 export default icons;

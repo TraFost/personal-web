@@ -10,7 +10,7 @@ const App = () => {
         <Route path="*" element={<h1>404</h1>} />
         <Route path="/" index element={<Home />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 };
