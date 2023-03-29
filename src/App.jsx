@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./pages";
+import { Home, NotFound } from "./pages";
 import { Footer, Navbar } from "./layouts";
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="*" element={<h1>404</h1>} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/" index element={<Home />} />
       </Routes>
       <Footer />

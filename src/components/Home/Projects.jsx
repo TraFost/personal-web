@@ -3,14 +3,14 @@ import secondImage from "../image/blitz.png";
 
 const Projects = () => {
   return (
-    <div className="mt-20 flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center">
+    <div className="mt-16 flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center pb-7 md:pb-0">
         <h6 className="text-white font-bold text-4xl">PROJECTS</h6>
         <div className="border-b-4 border-contrast-green w-1/3 mt-2" />
       </div>
-      <div className="flex items-center gap-24">
+      <div className="flex flex-col items-center md:flex-row md:gap-20">
         {/* container card */}
-        <div className="pt-10">
+        <div className="md:pt-10">
           <div className="max-w-2xl mx-auto">
             <div className="bg-white shadow-md border border-gray-200 rounded-full max-w-sm dark:bg-gray-800 dark:border-gray-700">
               <img

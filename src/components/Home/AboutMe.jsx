@@ -5,7 +5,7 @@ const AboutMe = () => {
     <div className="bg-gray-2 lg:h-screen flex">
       <div className="text-center flex flex-col justify-center items-center">
         <div className="pb-12 pt-10 lg:pt-0">
-          <span className="relative left-[42.5rem] font-bold text-8xl text-gray-1 opacity-20">
+          <span className="relative left-[42.5rem]   font-bold text-8xl text-gray-1 opacity-20">
             ABOUT ME
           </span>
           <div>
@@ -13,7 +13,7 @@ const AboutMe = () => {
             <div className="border-b-4 border-contrast-green w-[12%] relative left-[14rem] rounded-full mt-2" />
           </div>
         </div>
-        <p className="text-gray-1 max-w-[50%] text-2xl font-medium">
+        <p className="text-gray-1 max-w-[50%] text-xl font-medium">
           I'm <span className="text-contrast-green">Rahman Nurudin</span>, I'm
           <span className="text-contrast-green"> 20</span> years old and I live
           in <span className="text-contrast-green">Tangerang, Panongan</span>. I

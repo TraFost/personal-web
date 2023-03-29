@@ -1,6 +1,9 @@
+import { useState } from "react";
 import icons from "../icons";
 
 const ContactForm = () => {
+  // downlaod cv and portfolio pdf
+
   return (
     <div className="bg-gray mt-10 h-screen flex justify-center items-center">
       <div className="grid grid-cols-3 h-[350px]">
@@ -32,7 +35,11 @@ const ContactForm = () => {
         <div className="col-span-2">
           <div className="flex h-[60vh] bg-gray-2 text-white">
             <div className="mx-auto w-full max-w-lg">
-              <form className="mt-10">
+              <form
+                action="https://formsubmit.co/341be498de761fb6a32880b67bae6cda"
+                method="post"
+                className="mt-10"
+              >
                 <div className="flex flex-col">
                   <div className="grid gap-6 sm:grid-cols-2">
                     <div className="relative z-0">
@@ -41,6 +48,8 @@ const ContactForm = () => {
                         name="name"
                         className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
                         placeholder=" "
+                        autoComplete="off"
+                        required
                       />
                       <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
                         Your name
@@ -52,6 +61,8 @@ const ContactForm = () => {
                         name="email"
                         className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
                         placeholder=" "
+                        autoComplete="off"
+                        required
                       />
                       <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
                         Your email
@@ -60,9 +71,11 @@ const ContactForm = () => {
                     <div className="relative z-0 col-span-2">
                       <input
                         type="text"
-                        name="email"
+                        name="subject"
                         className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
                         placeholder=" "
+                        autoComplete="off"
+                        required
                       />
                       <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
                         Your subject
@@ -75,6 +88,8 @@ const ContactForm = () => {
                         className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
                         placeholder=" "
                         defaultValue={""}
+                        autoComplete="off"
+                        required
                       />
                       <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">
                         Message
@@ -84,7 +99,7 @@ const ContactForm = () => {
                   <div className="self-end pt-2">
                     <button
                       type="submit"
-                      className="mt-5 rounded-lg bg-contrast-green px-7 py-1 text-black font-medium text-md flex items-center"
+                      className="mt-5 rounded-lg bg-contrast-green px-7 py-1 text-black font-medium text-md flex items-center hover:bg-green-500"
                     >
                       <icons.SiMinutemailer className="inline mr-[10px]" />
                       Send
