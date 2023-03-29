@@ -1,3 +1,4 @@
+import { framerAnimation } from "../../utils/animation";
 import {
   AboutMe,
   Background,
@@ -22,11 +23,15 @@ const Home = () => {
           <ContactSection icons={icons} />
         </div>
         {/* hero img */}
-        <div className="md:row-span-1 lg:row-span-2">
+        <framerAnimation.div
+          initial={{ x: 500 }}
+          animate={{ x: 0, transition: { duration: 1 }, delay: 0.5 }}
+          className="md:row-span-1 lg:row-span-2"
+        >
           <figure className="ml-10">
             <img src={"../../mee.png"} alt="creator" />
           </figure>
-        </div>
+        </framerAnimation.div>
       </div>
       <Skills />
       <AboutMe />

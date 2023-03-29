@@ -13,15 +13,18 @@ const AboutMe = () => {
             <div className="border-b-4 border-contrast-green w-[12%] relative left-[14rem] rounded-full mt-2" />
           </div>
         </div>
-        <p className="text-gray-1 max-w-[50%] text-xl font-medium">
-          I'm <span className="text-contrast-green">Rahman Nurudin</span>, I'm
-          <span className="text-contrast-green"> 20</span> years old and I live
-          in <span className="text-contrast-green">Tangerang, Panongan</span>. I
-          love Front-end development, and I'm passionate about interfaces, from
-          their creation to development. I like to learn more and more about the
-          area, challenges that take me out of my comfort zone are the best. and
-          i can't wait to be able to land my first job as a{" "}
-          <span className="text-contrast-green">Front-end developer</span>.
+        <div className="text-gray-1 max-w-[50%] text-xl font-medium">
+          <p>
+            I'm <span className="text-contrast-green">Rahman Nurudin</span>, I'm
+            <span className="text-contrast-green"> 20</span> years old and I
+            live in{" "}
+            <span className="text-contrast-green">Tangerang, Panongan</span>. I
+            love Front-end development, and I'm passionate about interfaces,
+            from their creation to development. I like to learn more and more
+            about the area, challenges that take me out of my comfort zone are
+            the best. and i can't wait to be able to land my first job as a{" "}
+            <span className="text-contrast-green">Front-end developer</span>.
+          </p>
           <p className="pt-10">
             I recently graduated from{" "}
             <span className="text-contrast-green">
@@ -32,7 +35,7 @@ const AboutMe = () => {
             and i've developed a few projects using React.js which you can see
             in my portfolio.
           </p>
-        </p>
+        </div>
       </div>
     </div>
   );

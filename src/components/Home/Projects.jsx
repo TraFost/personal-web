@@ -8,9 +8,9 @@ const Projects = () => {
         <h6 className="text-white font-bold text-4xl">PROJECTS</h6>
         <div className="border-b-4 border-contrast-green w-1/3 mt-2" />
       </div>
-      <div className="flex flex-col items-center md:flex-row md:gap-20">
+      <div className="my-10 flex flex-col items-center md:flex-row md:gap-20">
         {/* container card */}
-        <div className="md:pt-10">
+        <div className="pb-10 md:pb-0">
           <div className="max-w-2xl mx-auto">
             <div className="bg-white shadow-md border border-gray-200 rounded-full max-w-sm dark:bg-gray-800 dark:border-gray-700">
               <img
@@ -60,7 +60,7 @@ const Projects = () => {
           </div>
         </div>
         {/* second content */}
-        <div className="pt-10">
+        <div className="">
           <div className="max-w-2xl mx-auto">
             <div className="bg-white shadow-md border border-gray-200 rounded-full max-w-sm dark:bg-gray-800 dark:border-gray-700">
               <img

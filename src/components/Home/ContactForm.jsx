@@ -15,18 +15,18 @@ const ContactForm = () => {
               <span className="border-b-2 border-white w-full ml-2.5 mt-1.5"></span>
             </div>
             <div className="pt-12 text-white">
-              <p className="pb-7 flex items-center gap-2">
+              <div className="pb-7 flex items-center gap-2">
                 <icons.BsFillTelephoneFill className="text-lg" />
                 <p>+62 89512907904</p>
-              </p>
-              <p className="pb-7 flex items-center gap-2">
+              </div>
+              <div className="pb-7 flex items-center gap-2">
                 <icons.AiOutlineMail className="text-lg" />
                 <p>rahmannurudin29@gmail.com</p>
-              </p>
-              <p className="text-white flex items-center gap-2">
+              </div>
+              <div className="text-white flex items-center gap-2">
                 <icons.TfiLocationPin className="text-lg" />
                 <p>Panongan, Tangerang, Indonesia</p>
-              </p>
+              </div>
             </div>
           </div>
           <div className="border-b-2 border-white w-[55%] pt-[4.5rem]" />
