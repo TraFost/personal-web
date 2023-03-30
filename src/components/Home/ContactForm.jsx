@@ -1,9 +1,7 @@
-import { useState } from "react";
 import icons from "../icons";
+import { framerAnimation } from "../../utils/animation";
 
 const ContactForm = () => {
-  // downlaod cv and portfolio pdf
-
   return (
     <div className="bg-gray mt-10 h-screen flex justify-center items-center">
       <div className="grid grid-cols-3 h-[350px]">
@@ -97,13 +95,15 @@ const ContactForm = () => {
                     </div>
                   </div>
                   <div className="self-end pt-2">
-                    <button
+                    <framerAnimation.button
+                      whileHover={{ scale: 1.05, backgroundColor: "#efefef" }}
+                      whileTap={{ scale: 0.95 }}
                       type="submit"
-                      className="mt-5 rounded-lg bg-contrast-green px-7 py-1 text-black font-medium text-md flex items-center hover:bg-green-500"
+                      className="mt-5 rounded-lg bg-contrast-green px-7 py-1 text-black font-medium text-md flex items-center"
                     >
                       <icons.SiMinutemailer className="inline mr-[10px]" />
                       Send
-                    </button>
+                    </framerAnimation.button>
                   </div>
                 </div>
               </form>

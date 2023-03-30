@@ -1,13 +1,32 @@
-import { motion } from "framer-motion";
+import { framerAnimation } from "../../utils/animation";
+import useScroll from "../../hooks/use-intersection";
 
 const AboutMe = () => {
+  const animationStart = {
+    x: [500, 0],
+    transition: {
+      type: "tween",
+      duration: 1,
+      bounce: 0.3,
+    },
+  };
+
+  const [ref, controls] = useScroll(animationStart, 0.2);
+
   return (
     <div className="bg-gray-2 lg:h-screen flex">
-      <div className="text-center flex flex-col justify-center items-center">
+      <framerAnimation.div
+        ref={ref}
+        animate={controls}
+        className="text-center flex flex-col justify-center items-center"
+      >
         <div className="pb-12 pt-10 lg:pt-0">
-          <span className="relative left-[42.5rem]   font-bold text-8xl text-gray-1 opacity-20">
+          <framerAnimation.span
+            whileHover={{ opacity: 0.5, cursor: "pointer" }}
+            className="relative left-[42.5rem]   font-bold text-8xl text-gray-1 opacity-20"
+          >
             ABOUT ME
-          </span>
+          </framerAnimation.span>
           <div>
             <h2 className="text-white text-4xl font-bold">ABOUT ME</h2>
             <div className="border-b-4 border-contrast-green w-[12%] relative left-[14rem] rounded-full mt-2" />
@@ -36,7 +55,7 @@ const AboutMe = () => {
             in my portfolio.
           </p>
         </div>
-      </div>
+      </framerAnimation.div>
     </div>
   );
 };

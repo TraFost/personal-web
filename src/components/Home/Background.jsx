@@ -1,8 +1,28 @@
+import { framerAnimation } from "../../utils/animation";
+import useScroll from "../../hooks/use-intersection";
+
 const Background = () => {
+  const animationStart = {
+    opacity: 1,
+    y: [200, 0],
+    scale: [0.5, 1],
+    opacity: [0, 1],
+    transition: {
+      type: "spring",
+      stiffness: 50,
+      duration: 1,
+    },
+  };
+  const [ref, controls] = useScroll(animationStart, 0.2);
+
   return (
     <>
       <div className="bg-gray">
-        <div className="flex flex-col md:flex-row items-center justify-evenly pt-16">
+        <framerAnimation.div
+          ref={ref}
+          animate={controls}
+          className="flex flex-col md:flex-row items-center justify-evenly pt-16"
+        >
           <div>
             <h3 className="text-white font-bold text-2xl pb-3 md:pb-8">
               Education
@@ -59,10 +79,13 @@ const Background = () => {
               </div>
             </div>
           </div>
-        </div>
-        <p className="text-gray-1 relative font-bold pt-12 text-5xl right-[7.2rem] sm:right-[14.6rem] sm:text-8xl md:pt-8 opacity-20 ">
+        </framerAnimation.div>
+        <framerAnimation.p
+          whileHover={{ x: 10, opacity: 0.5 }}
+          className="text-gray-1 relative font-bold pt-12 text-5xl right-[7.2rem] sm:right-[14.6rem] sm:text-8xl md:pt-8 opacity-20"
+        >
           <span>ABOUT ME</span>
-        </p>
+        </framerAnimation.p>
       </div>
     </>
   );

@@ -5,7 +5,7 @@ const NavbarLists = () => {
     <>
       <ul
         className={
-          window.scrollY > 312
+          window.scrollY > 600
             ? `flex flex-col md:flex-row justify-center md:gap-custom text-black`
             : `flex flex-col md:flex-row justify-center md:gap-custom text-white`
         }

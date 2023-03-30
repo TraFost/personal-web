@@ -1,16 +1,10 @@
-import { framerAnimation } from "../../utils/animation";
-import {
-  AboutMe,
-  Background,
-  Skills,
-  Projects,
-  ContactForm,
-} from "../../components/Home";
+import * as section from "../../components/Home";
 import {
   Document,
   ContactSection,
   ProfileDetails,
 } from "../../components/Home/Hero";
+import * as motion from "../../utils/animation";
 import icons from "../../components/icons";
 
 const Home = () => {
@@ -23,21 +17,30 @@ const Home = () => {
           <ContactSection icons={icons} />
         </div>
         {/* hero img */}
-        <framerAnimation.div
-          initial={{ x: 500 }}
-          animate={{ x: 0, transition: { duration: 1 }, delay: 0.5 }}
+        <motion.framerAnimation.div
+          variants={motion.containerImgVariants}
+          initial="initial"
+          animate="onAnimate"
           className="md:row-span-1 lg:row-span-2"
         >
           <figure className="ml-10">
-            <img src={"../../mee.png"} alt="creator" />
+            <motion.framerAnimation.img
+              variants={motion.imgVariants}
+              animate="idleAnimations"
+              whileHover={{
+                opacity: 0.5,
+              }}
+              src={"../../mee.png"}
+              alt="creator"
+            />
           </figure>
-        </framerAnimation.div>
+        </motion.framerAnimation.div>
       </div>
-      <Skills />
-      <AboutMe />
-      <Background />
-      <Projects />
-      <ContactForm />
+      <section.Skills />
+      <section.AboutMe />
+      <section.Background />
+      <section.Projects />
+      <section.ContactForm />
     </main>
   );
 };

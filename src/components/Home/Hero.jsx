@@ -9,18 +9,24 @@ export const Document = ({ icons }) => {
       animate={{ x: 0, transition: { duration: 1 }, delay: 0.5 }}
       className="text-white"
     >
-      <a href={cv} download="CV Rahman Nurudin" className="mr-20">
+      <framerAnimation.a
+        href={cv}
+        download="CV Rahman Nurudin"
+        whileHover={{ color: "#13FF00" }}
+        className="mr-20"
+      >
         <icons.AiOutlineCloudDownload className="inline-block mr-2 text-3xl" />
         Download CV
-      </a>
-      <a
+      </framerAnimation.a>
+      <framerAnimation.a
         href={portfolio}
         download="Portfolio Rahman Nurudin"
-        className="border rounded-md bg-contrast-green text-black p-1.5 pr-4 max-w-[10rem] hover:bg-green-600"
+        whileHover={{ scale: 1.05, backgroundColor: "#efefef" }}
+        className="border rounded-md bg-contrast-green text-black p-1.5 pr-4 max-w-[10rem]"
       >
         <icons.MdDownloadForOffline className="inline-block mr-2 text-2xl" />
         <span className="font-bold">Portfolio</span>
-      </a>
+      </framerAnimation.a>
     </framerAnimation.div>
   );
 };
@@ -38,6 +44,7 @@ export const ContactSection = ({ icons }) => {
             rotate: 360,
             transition: { duration: 0.4 },
           }}
+          whileTap={{ scale: 0.8 }}
           className="bg-gray rounded-full h-11 w-11 grid place-items-center cursor-pointer"
         >
           <a href="https://www.instagram.com/rahmannrdn/">
@@ -50,6 +57,7 @@ export const ContactSection = ({ icons }) => {
             rotate: 360,
             transition: { duration: 0.4 },
           }}
+          whileTap={{ scale: 0.8 }}
           className="bg-gray rounded-full h-11 w-11 grid place-items-center cursor-pointer"
         >
           <a href="https://github.com/TraFost">
@@ -62,6 +70,7 @@ export const ContactSection = ({ icons }) => {
             rotate: 360,
             transition: { duration: 0.4 },
           }}
+          whileTap={{ scale: 0.8 }}
           className="bg-gray rounded-full h-11 w-11 grid place-items-center cursor-pointer"
         >
           <a href="https://www.linkedin.com/in/rahmannrdn/">
