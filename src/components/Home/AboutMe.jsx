@@ -14,7 +14,7 @@ const AboutMe = () => {
   const [ref, controls] = useScroll(animationStart, 0.2);
 
   return (
-    <div className="bg-gray-2 lg:h-screen flex">
+    <div id="about-section" className="bg-gray-2 lg:h-screen flex">
       <framerAnimation.div
         ref={ref}
         animate={controls}

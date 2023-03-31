@@ -17,7 +17,7 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      // window.removeEventListener("scroll", handleScroll);
     };
   });
 
@@ -26,7 +26,7 @@ const Navbar = () => {
       <nav
         className={
           isScrolled
-            ? "pt-5 fixed inset-x-0 top-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm transition-all transform duration-500 ease-in-out"
+            ? "pt-5 fixed inset-x-0 top-0 bg-white bg-opacity-50 backdrop-filter backdrop-blur-sm transition-all transform duration-500 ease-in-out h-16"
             : "pt-5 fixed inset-x-0 top-0"
         }
       >

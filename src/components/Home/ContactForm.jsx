@@ -3,7 +3,10 @@ import { framerAnimation } from "../../utils/animation";
 
 const ContactForm = () => {
   return (
-    <div className="bg-gray mt-10 h-screen flex justify-center items-center">
+    <div
+      id="contact-section"
+      className="bg-gray mt-10 h-screen flex justify-center items-center"
+    >
       <div className="grid grid-cols-3 h-[350px]">
         {/* contact details */}
         <div className="bg-gray-5 text-white col-span-1 min-w-[325px] flex flex-col pt-[3.7rem]">

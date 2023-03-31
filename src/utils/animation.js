@@ -19,11 +19,10 @@ export const containerImgVariants = {
 
 export const imgVariants = {
   idleAnimations: {
-    y: [0, 30, -20],
+    y: [20, 50, 0],
     transition: {
       duration: 5,
       repeat: Infinity,
-      repeatType: "reverse",
     },
   },
 };

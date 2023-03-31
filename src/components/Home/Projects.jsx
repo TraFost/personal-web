@@ -17,6 +17,7 @@ const Projects = () => {
 
   return (
     <framerAnimation.div
+      id="project-section"
       ref={ref}
       animate={controls}
       className="mt-16 flex flex-col justify-center items-center"

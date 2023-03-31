@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { framerAnimation } from "../../utils/animation";
 
 const NavbarLists = () => {
   return (
@@ -10,15 +10,30 @@ const NavbarLists = () => {
             : `flex flex-col md:flex-row justify-center md:gap-custom text-white`
         }
       >
-        <NavLink to="" className="active:text-red-500">
-          <li>
-            {/* <div className="border-t border-contrast-green w-[0.200rem] relative left-5" /> */}
-            Home
-          </li>
-        </NavLink>
-        <li>About Me</li>
-        <li>Projects</li>
-        <li>Contact me</li>
+        <framerAnimation.li
+          whileTap={{ scale: 0.8, transition: { duration: 0.2 }, y: 10 }}
+          className="active:text-contrast-green"
+        >
+          <framerAnimation.a href="#home-section">Home</framerAnimation.a>
+        </framerAnimation.li>
+        <framerAnimation.li
+          whileTap={{ scale: 0.8, transition: { duration: 0.2 }, y: 10 }}
+          className="active:text-contrast-green"
+        >
+          <a href="#about-section">About Me</a>
+        </framerAnimation.li>
+        <framerAnimation.li
+          whileTap={{ scale: 0.8, transition: { duration: 0.2 }, y: 10 }}
+          className="active:text-contrast-green"
+        >
+          <a href="#project-section">Projects</a>
+        </framerAnimation.li>
+        <framerAnimation.li
+          whileTap={{ scale: 0.8, transition: { duration: 0.2 }, y: 10 }}
+          className="active:text-contrast-green"
+        >
+          <a href="#contact-section">Contact Me</a>
+        </framerAnimation.li>
       </ul>
     </>
   );
